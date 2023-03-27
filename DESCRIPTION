@@ -116,4 +116,4 @@ Collate:
     'utilities-theme.R'
     'utils.R'
 Remotes: 
-ospsuite.utils=github::Open-Systems-Pharmacology/OSPSuite.RUtils@*release
+  ospsuite.utils=Open-Systems-Pharmacology/OSPSuite.RUtils@*release

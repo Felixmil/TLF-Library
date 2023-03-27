@@ -8,10 +8,10 @@ class="pkgdown-devel"><img
 src="https://ci.appveyor.com/api/projects/status/github/Open-Systems-Pharmacology/TLF-Library?branch=develop&amp;svg=true"
 alt="AppVeyor build status" /></a> <a
 href="https://app.codecov.io/gh/Open-Systems-Pharmacology/TLF-Library"
-class="pkgdown-devel"><img
 src="https://codecov.io/gh/Open-Systems-Pharmacology/TLF-Library/branch/develop/graph/badge.svg"
 alt="codecov" /></a>
-
+[![R-CMD-check](https://github.com/Felixmil/TLF-Library/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/Open-Systems-Pharmacology/TLF-Library/actions/workflows/R-CMD-check.yaml)
+[![R-CMD-check](https://github.com/Open-Systems-Pharmacology/TLF-Library/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/Open-Systems-Pharmacology/TLF-Library/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The `{tlf}` package provides an object-oriented framework to create

@@ -118,7 +118,7 @@ plotHistogram <- function(data = NULL,
   # see https://ggplot2.tidyverse.org/reference/geom_histogram.html for more info
   mapping <- ggplot2::aes(
     x = .data[[mapLabels$x]],
-    y = after_stat(count),
+    y = after_stat(coun),
     fill = .data[[mapLabels$fill]]
   )
 

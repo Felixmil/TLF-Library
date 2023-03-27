@@ -28,11 +28,11 @@ TimeProfilePlotConfiguration <- R6::R6Class(
                           metaData = NULL,
                           dataMapping = NULL) {
       super$initialize(
-        ..., 
+        ...,
         data = data,
         metaData = metaData,
         dataMapping = dataMapping
-        )
+      )
       # Update Y2 label
       private$.labels$y2label <- y2label %||% private$.labels$y2label
       if (!is.null(data)) {
@@ -42,9 +42,10 @@ TimeProfilePlotConfiguration <- R6::R6Class(
         y2label %||%
           .dataMappingLabel(dataMapping$y2Axis, metaData) %||%
           dataMapping$y2Axis %||%
-          private$.labels$y2label$text, font = private$.labels$y2label$font
+          private$.labels$y2label$text,
+        font = private$.labels$y2label$font
       )
-      
+
       # Y2-Axis configuration, overwrite some properties only if they are defined
       validateIsOfType(y2Axis, "YAxisConfiguration", nullAllowed = TRUE)
       private$.y2Axis <- y2Axis %||% YAxisConfiguration$new(

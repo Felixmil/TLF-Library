@@ -129,8 +129,10 @@ plotObsVsPred <- function(data,
         se = FALSE,
         formula = "y ~ x",
         na.rm = TRUE,
-        mapping = ggplot2::aes(x = .data[[mapLabels$x]],
-                               y = .data[[mapLabels$y]]),
+        mapping = ggplot2::aes(
+          x = .data[[mapLabels$x]],
+          y = .data[[mapLabels$y]]
+        ),
         color = aestheticValues$color,
         linetype = aestheticValues$linetype,
         alpha = aestheticValues$alpha,
@@ -141,8 +143,10 @@ plotObsVsPred <- function(data,
     plotObject <- plotObject +
       ggplot2::geom_smooth(
         data = mapData,
-        mapping = ggplot2::aes(x = .data[[mapLabels$x]],
-                               y = .data[[mapLabels$y]]),
+        mapping = ggplot2::aes(
+          x = .data[[mapLabels$x]],
+          y = .data[[mapLabels$y]]
+        ),
         method = "lm",
         se = FALSE,
         formula = "y ~ x",

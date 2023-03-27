@@ -54,11 +54,11 @@ ObservedDataMapping <- R6::R6Class(
       super$initialize(
         x = x %||% smartMap$x,
         y = y %||% smartMap$y,
-        color = color, 
-        shape = shape, 
-        group = group, 
+        color = color,
+        shape = shape,
+        group = group,
         data = data
-        )
+      )
 
       # If defined, ymin and ymax are used as is
       # If not, error/uncertainty are used and
@@ -109,23 +109,23 @@ ObservedDataMapping <- R6::R6Class(
       }
       return(mapData)
     },
-    
+
     #' @description Assess if `data` require a dual axis plot
     #' @param data data.frame to check
     #' @return A logical
     requireDualAxis = function(data) {
       .validateMapping(self$y2Axis, data, nullAllowed = TRUE)
-      if(isEmpty(self$y2Axis)){
+      if (isEmpty(self$y2Axis)) {
         return(FALSE)
       }
       return(any(as.logical(data[, self$y2Axis]), na.rm = TRUE))
     },
-    
+
     #' @description Render NA values for all right axis data
     #' @param data A data.frame
     #' @return A data.frame to be plotted in left axis
     getLeftAxis = function(data) {
-      if(!self$requireDualAxis(data)){
+      if (!self$requireDualAxis(data)) {
         return(data)
       }
       # Ensure NAs in that data don't mess up the selection
@@ -141,7 +141,7 @@ ObservedDataMapping <- R6::R6Class(
       }
       return(data)
     },
-    
+
     #' @description Render NA values for all left axis data
     #' @param data A data.frame
     #' @return A data.frame to be plotted in right axis

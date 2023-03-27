@@ -16,7 +16,6 @@ test_that("plotObservedVsSimulated works ", {
 })
 
 test_that("foldDistance are plotted correctly", {
-
   plotConfiguration <- ObsVsPredPlotConfiguration$new(
     foldLinesLegend = TRUE,
     xScale = Scaling$log, xLimits = c(0.05, 50),
@@ -72,7 +71,7 @@ test_that("foldDistance are plotted correctly", {
       plotConfiguration = ObsVsPredPlotConfiguration$new(
         foldLinesLegend = TRUE,
         foldLinesLegendDiagonal = TRUE,
-        legendTitle =  "diagonal lines",
+        legendTitle = "diagonal lines",
         xScale = Scaling$log, xLimits = c(0.05, 50),
         yScale = Scaling$log, yLimits = c(0.05, 50),
       ),

@@ -9,6 +9,5 @@ exclusions: list(
     "inst",
     "tests/testthat/test-predefined-functions.R",
     "R/aggregation-input.R"
-
   )
 encoding: "UTF-8"

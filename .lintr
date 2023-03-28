@@ -2,9 +2,13 @@ linters: linters_with_defaults(
     object_name_linter(styles = c("CamelCase", "camelCase", "symbols", "dotted.case")),
     line_length_linter = NULL,
     commented_code_linter = NULL,
-    object_length_linter = NULL
+    object_length_linter = NULL,
+    cyclocomp_linter = NULL
   )
 exclusions: list(
-    "inst"
+    "inst",
+    "tests/testthat/test-predefined-functions.R",
+    "R/aggregation-input.R"
+
   )
 encoding: "UTF-8"

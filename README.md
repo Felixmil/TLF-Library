@@ -11,7 +11,7 @@ href="https://app.codecov.io/gh/Open-Systems-Pharmacology/TLF-Library"
 src="https://codecov.io/gh/Open-Systems-Pharmacology/TLF-Library/branch/develop/graph/badge.svg"
 alt="codecov" /></a>
 [![check-release](https://github.com/Felixmil/TLF-Library/actions/workflows/check-release.yaml/badge.svg)](https://github.com/Felixmil/TLF-Library/actions/workflows/check-release.yaml)
-[![codecov](https://codecov.io/gh/Felixmil/TLF-Library/branch/gh-actions-test/graph/badge.svg?token=TW66BJKMDL)](https://codecov.io/gh/Felixmil/TLF-Library)
+[![Codecov test coverage](https://codecov.io/gh/Felixmil/TLF-Library/branch/gh-actions-test/graph/badge.svg?token=TW66BJKMDL)](https://codecov.io/gh/Felixmil/TLF-Library)
 [![lint](https://github.com/Felixmil/TLF-Library/actions/workflows/lint.yaml/badge.svg)](https://github.com/Felixmil/TLF-Library/actions/workflows/lint.yaml)
 <!-- badges: end -->
 
